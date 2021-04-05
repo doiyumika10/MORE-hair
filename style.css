@@ -1,0 +1,561 @@
+@charset "UTF-8";
+
+/* 基本設定
+=============================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
+  line-height: 2.4;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-width: 1280px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a:hover img {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #a78f73;
+  color: #fff;
+}
+
+::selection {
+  background: #a78f73;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+}
+
+/* コンテンツ
+=============================================== */
+
+/* PC用共通ボタン
+=================================== */
+.btn {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  display: block;
+  width: 288px;
+  height: 68px;
+  background-color: #E2DFDA;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Open+Sans";
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn a {
+  display: block;
+  color: #524F4C;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #FFF;
+  color: #A78F73;
+  border: 2px solid #A78F73;
+}
+
+.btn:hover a {
+  color: #A78F73;
+  margin: -2px;
+}
+
+/* PC用共通タイトル
+=================================== */
+h2 {
+  color: #A78F73;
+  font-family: "Open+Sans";
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.ttl-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 23.5px;
+}
+
+.ttl-wrapper p {
+  width: 325px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -22.1px auto 29.4px;
+  color: #524F4C;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
+}
+
+h2 span {
+  display: block;
+  margin: 0 auto;
+  left: 0;
+  width: 103px;
+  height: 2px;
+  border-top: 2px dashed #524F4C;
+}
+
+/* スライダー
+=============================================== */
+
+#bigbg {
+  height: 730px;
+}
+
+.swiper-container {
+  height: 730px;
+}
+/* 全体のスタイル */
+.swiper-wrapper {
+	width: 100%;
+	height: 730px;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+	width: 100%;
+	height: 100%;
+	/* text-align: center; */
+	/* line-height: 250px; */
+}
+
+.swiper-pagination-bullet {
+  border-radius: inherit;
+  margin: 0 5px!important;
+  width: 54px;
+  height: 5px;
+  background: gray;
+  opacity: 0.19;
+}
+.swiper-pagination-bullet-active {
+  background: gray;
+  opacity: 1;
+}
+
+/* グローバルナビ
+=============================================== */
+#g-nav {
+  max-width: 1280px;
+  height: 160px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 26.5px 0;
+  margin: 0 auto;
+}
+
+#g-nav p {
+  font-family: "Open+Sans";
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 0.8px;
+}
+
+#g-nav span {
+  display: block;
+  margin: 0 auto;
+  left: 0;
+  width: 125px;
+  height: 3px;
+  background-color: #a78f73;
+  border-radius: 4px;
+}
+
+#g-nav-ul {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* 予約バナー
+=============================================== */
+#reserve-banner {
+  width: 100%;
+  heght: 242px;
+  background-color: #F5F3F0;
+}
+
+#reserve-banner-wrapper {
+  width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#reserve-banner img {
+  margin-left: 12.2%;
+}
+
+#reserve-banner div {
+  margin-right: 13.3%;
+}
+
+/* インフォメーション
+=============================================== */
+#information {
+  height: 520px;
+}
+
+#information-box {
+  width: 750px;
+  height: 228px;
+  background-color: #E2DFDA;
+  padding: 43px 35.5px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#information-box p {
+  text-align: left;
+}
+
+/* コンセプト
+=============================================== */
+#concept {
+  background-color: #FDFBF3;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+#concept ul {
+  max-width: 1146px;
+  margin: 28.8px auto 55.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#concept figure img {
+  border-radius: 50%;
+  margin-bottom: 16.5px;
+}
+
+#concept h3 {
+  font-family: "Open+Sans";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#concept a {
+  text-decoration: none;
+}
+
+#concept .btn {
+  margin: 0 auto;
+}
+
+/* スタッフ
+=============================================== */
+
+#staff {
+  position: relative;
+  background-color: #FFF;
+  width: 100%;
+  height: 800px;
+}
+#staff img {
+  width: 258px;
+  height: 258px;
+}
+
+#staff .name-en {
+  font-family: "Open+Sans";
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+#staff .name-jp {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.line {
+  display: block;
+  width: 239px;
+  margin: 0 auto;
+  left: 0;
+  height: 2px;
+  background-color: #A78F73;
+}
+
+#staff .philosophy span{
+  font-size: 15px;
+  color: #333;
+}
+#staff .philosophy {
+  font-family: "Open+Sans";
+  color: #A78F73;
+  line-height: 2;
+}
+
+#staff .textcontent {
+  font-size: 15px;
+  width: 241px;
+  margin: 0 auto;
+}
+
+.fab {
+  color: #A78F73;
+}
+
+.swiper2 {
+  width: 1150px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-top: 28.8px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 48px;
+	height: 48px;
+	background-size: 48px 48px;
+	margin: -24px 25px 0;
+}
+
+.swiper-button-next {
+	background-image: url("../images/staff-nav.png");
+	-webkit-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+    outline: none;
+}
+/* 前ページボタンのスタイル */
+.swiper-button-prev {
+	background-image: url("../images/staff-nav.png");
+        outline: none;
+}
+
+/* 商品情報
+=============================================== */
+
+#products {
+  background-color: #FDFBF3;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+#products img {
+  width: 258px;
+  height: auto;
+}
+
+#products ul {
+  width: 1028px;
+  margin: 28.8px auto 55.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#products h3 {
+  font-family: "Open+Sans";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#products a{
+    text-decoration: none;
+}
+
+#products .btn {
+  margin: 0 auto;
+}
+
+/* 店舗情報
+=============================================== */
+
+#location {
+  background-color: #FFF;
+  width: 100%;
+  height: 725px;
+  margin: 0 auto;
+}
+
+#location-wrapper {
+  width: 1030px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#location article {
+  text-align: left;
+}
+
+#recruit-banner {
+  margin-top: 43px;
+}
+
+/* メインコンテンツ
+=============================================== */
+
+
+/* フッター
+=============================================== */
+
+footer {
+  position: relative;
+  background-color: #524F4C;
+  width: 100%;
+  height: 258px;
+  margin: 0 auto;
+  color: #F5F3F0;
+  font-size: 12px;
+}
+
+footer ul {
+  margin: 0 auto;
+  padding: 24px 0 13.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 971px;
+}
+
+footer ul li {
+  height: 24px;
+  display: block;
+  width: 161px;
+  border-left: 1px solid #F5F3F0;
+  margin: -1px;
+  line-height: 2;
+}
+
+footer ul li:last-child {
+  border-right: 1px solid #F5F3F0;
+}
+
+footer ul li a{
+    color: #F5F3F0;
+}
+
+footer img {
+  margin-bottom: 11.6px;
+}
+
+footer .go-top {
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 65px;
+  right: 34px;
+  bottom: 225px;
+  background-color: #E2DFDA;
+  border-radius: 50%;
+}
+
+footer .go-top img {
+  width: 46px;
+  height: 46px;
+  margin-top: 10px;
+}
+
+/* レスポンシブ用ナビ
+=============================================== */
+
+#phone-nav {
+  display: none;
+}

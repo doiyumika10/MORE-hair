@@ -6,14 +6,17 @@
     <title>MORE-髪質改善サロン- Concept</title>
     <meta name="description" content="">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-193766703-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193766703-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-193766703-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-193766703-1');
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js" integrity="sha512-XlJ5OxV+f3wJcGwgHf01GolB3Av3I6+gFcCewcgVIQrbdZ5M5EDcoW30Pu13cAbomLKnuy8uz3nF25bjmHWUJA==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css" integrity="sha512-plA6jWTOXEgCv6HA9TxmfflGkRSaJ/G9/1QDQsmCumxS/GIHIpCJOEb5u7JpLLn/wUse14oM8Ddh3sp3z5rg/w==" crossorigin="anonymous" />
@@ -78,48 +81,59 @@
         </div>
         <div>
             <p>
-                MOREは20代〜50代のお客様が通いやすい落ち着いた店内のデザイン<br>
+                MOREは20代?50代のお客様が通いやすい落ち着いた店内のデザイン<br>
                 音楽、薬剤、商品のラインナップ。<br>
                 おしゃれと上質を求めるお客様、是非とも一度お越し下さいませ。
             </p>
         </div>
         <ul id="concept-ul">
-            <li class="content-btn active">
-                <a id="damageless">Damage Less</a>
+            <li id="dbtn" class="content-btn active">
+                <a href="#damageless">Damage Less</a>
             </li>
-            <li class="content-btn">
-                <a id="treatment">Treatment</a>
+            <li id="tbtn" class="content-btn">
+                <a href="#treatment">Treatment</a>
             </li>
-            <li class="content-btn">
-                <a id="headspa">Head Spa</a>
+            <li id="hsbtn" class="content-btn">
+                <a href="#headspa">Head Spa</a>
             </li>
-            <li class="content-btn">
-                <a id="haircare">Hair Care</a>
+            <li id="hcbtn" class="content-btn">
+                <a href="#haircare">Hair Care</a>
             </li>
         </ul>
         <article>
-            <div id="damageless-article" class="damageless-article article-wrapper a-active">
-                <p><img src="images/damageless.jpg" alt="ダメージレス"></p>
+            <div id="damageless-article" class="damageless-article article-wrapper">
                 <div>
-                    <h3>Damage lessを大前提に。<br>
+                    <img src="
+                          images/damageless.jpg">
+                </div>
+                <div>
+                    <h3>
+                        Damage lessを大前提に。<br>
                         綿密なカウンセリングとハイデザイン。<br>
-                        心から安らぐサロンタイムを。</h3>
-                    <p>リラックスして頂く事と想いを形にする為に余裕を持った施術時間を確保しています。
+                        心から安らぐサロンタイムを。
+                    </h3>
+                    <p>
+                        リラックスして頂く事と想いを形にする為に余裕を持った施術時間を確保しています。
                         特にカウンセリングでは骨格、造形学、バランス学、服装、頭の形、生え癖などから”自分ではわからない魅力”と”お客様の好み”、”似合うスタイル”をMIXしご提案。
-                        お客様の大切な声にじっくりと耳を傾け、真の心のリラックスと共にお客様目線での完璧な仕上がり をご提供致します。</p>
+                        お客様の大切な声にじっくりと耳を傾け、真の心のリラックスと共にお客様目線での完璧な仕上がり をご提供致します。
+                    </p>
                 </div>
             </div>
-            <div id="treatment-article" class="treatment-article">
-                <img src="images/damageless.jpg" alt="トリートメント">
+            <div id="treatment-article" class="treatment-article article-wrapper hidden">
                 <div>
-                    <h3>最新のケミカルを詰め込んだトリートメントで髪質改善。<br>圧倒的体験を。</h3>
+                    <img src="images/damageless.jpg" alt="トリートメント">
+                </div>
+                <div>
+                    <h3>最新のケミカルを詰め込んだトリートメントで髪質改善。圧倒的体験を。</h3>
                     <p>「高いTreatmentや髪質改善Treatmentをしたのに2週間で元通りに。」そんな経験ございませんか？　　　
                         酸熱Trや髪質改善Trを繰り返しても髪質改善は出来ません。 Timereでは全施術のダメージを低減、薬剤施術による内部残留物を除去、pHの調整など。　　　　　
                         髪に負担がない状態を作り上げ継続するからこそ髪本来の美さが現れ【真の髪質改善】に繋がるのです…。 巷の髪質改善に騙されないで。</p>
                 </div>
             </div>
-            <div id="headspa-article" class="headspa-article">
-                <img src="images/damageless.jpg" alt="ヘッドスパ">
+            <div id="headspa-article" class="headspa-article article-wrapper hidden">
+                <div>
+                    <img src="images/damageless.jpg" alt="ヘッドスパ">
+                </div>
                 <div>
                     <h3>頭皮の悩みを解消し、効果を実感できるマッサージスパで髪も心も綺麗に。</h3>
                     <p>知らないうちに頭皮はすごく疲れています。
@@ -128,8 +142,10 @@
                         お客様のお悩みをしっかりヒアリングし、頭皮のハリ・コリの診断し改善させて頂きます。</p>
                 </div>
             </div>
-            <div id="haircare-article" class="haircare-article">
-                <img src="images/damageless.jpg" alt="ヘアケア">
+            <div id="haircare-article" class="haircare-article article-wrapper hidden">
+                <div>
+                    <img src="images/damageless.jpg" alt="ヘアケア">
+                </div>
                 <div>
                     <h3>一番似合うスタイルの第一歩
                         それは質感ケアから始まります。</h3>
@@ -140,6 +156,7 @@
             </div>
         </article>
     </main>
+
     <footer>
         <ul>
             <li><a href="">会社概要</a></li>
@@ -156,6 +173,7 @@
         </small>
         <div class="go-top"><a href="#"><img src="images/go-top.png" alt="トップへ戻る"></a></div>
     </footer>
+
     <nav id="phone-nav">
     </nav>
 

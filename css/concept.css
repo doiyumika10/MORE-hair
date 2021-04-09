@@ -211,7 +211,7 @@ h2 span {
 =============================================== */
 
 main {
-  height: 960px;
+  height: 1000px;
   background-color: #FDFBF3;
 }
 
@@ -274,13 +274,18 @@ main {
 article {
   width: 1124px;
   height: 400px;
+    margin: 0 auto;
 }
-.damageless-article {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+
+.article-wrapper {
   text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 article img {
@@ -292,18 +297,14 @@ article img {
 article h3 {
   font-size: 24px;
   font-weight: bold;
-
+    margin-left: 20px;
+}
+article p{
+    margin-left: 20px;
 }
 
-.damageless-article,
-.treatment-article,
-.headspa-article,
-.haircare-article {
+.hidden {
   display: none;
-}
-
-.a-active {
-  display: block;
 }
 
 /* フッター

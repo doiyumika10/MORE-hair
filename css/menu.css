@@ -75,6 +75,69 @@ main {
 /* コンテンツ
 =============================================== */
 
+main {
+	height: 2222px;
+	background-color: #FDFBF3;
+}
+
+
+
+table {
+	width: 753px;
+	margin: 72px auto 0;
+}
+
+table:first-child  {
+	margin-top: 0;
+}
+
+/*
+table:nth-child(1) {
+	margin-top: 0;
+}
+*/
+
+th {
+	font-size: 30px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.sissor:before {
+	font-family: "Font Awesome 5 Free";
+	content: '\f0c4';
+	font-weight: 900;
+	padding-right: 1rem;
+	color: #333;
+}
+
+tr{
+	border-bottom: 1px solid #9A9A9A; 
+}
+
+tr:last-child {
+	border-bottom:  1px solid #9A9A9A;
+}
+
+tr:first-child {
+	border-top: none;
+}
+
+td{
+	font-size: 14px;
+	line-height: 3.85;
+}
+
+td:before {
+	content:'　';
+}
+
+.menu {
+	width: 578px;
+	text-align: left;
+}
+
+
 /* PC用共通ボタン
 =================================== */
 .btn {

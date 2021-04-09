@@ -72,9 +72,6 @@ main {
   width: 100%;
 }
 
-/* コンテンツ
-=============================================== */
-
 /* PC用共通ボタン
 =================================== */
 .btn {
@@ -181,6 +178,81 @@ h2 span {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/* コンテンツ
+=============================================== */
+
+main {
+  height: 1537px;
+  background-color: #FDFBF3;
+}
+
+.reserve-box {
+  width: 951px;
+  height: 301px;
+  background-color: #E2DFDA;
+  margin: 60px auto 127px;
+}
+
+.reserve-box:nth-child(3) {
+  margin-bottom: 66px;
+}
+
+.reserve-box h3 {
+  font-size: 30px;
+	display: block;
+	padding-top: 40px;
+}
+
+.reserve-btn {
+  width: 753px;
+  height: 68px;
+  background-color: #A78F73;
+  margin: 17px auto;
+	cursor: pointer;
+
+}
+.reserve-btn a {
+		color:#F5F3F0;
+	font-size: 30px;
+	line-height: 2.27;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.tel-icon:before {
+	font-family: "Font Awesome 5 Free";
+	content: '\f879';
+	font-weight: 900;
+	padding-right: 1rem;
+	color: #F5F3F0;
+}
+
+.reserve-btn a:hover .tel-icon {
+	opacity: 1;
+}
+
+#location {
+  background-color: #FFF;
+  width: 100%;
+  height: 725px;
+  margin: 0 auto;
+}
+
+#location-wrapper {
+  width: 1030px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#location-wrapper article {
+  text-align: left;
 }
 
 /* フッター

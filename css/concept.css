@@ -265,7 +265,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px auto;
+  margin: 40px auto 94px;
 }
 #concept-ul li {
   margin: -2px;
@@ -291,7 +291,7 @@ article {
 article img {
   display: block;
   width: 555px;
-  height: inherit;
+  height: 400px;
 }
 
 article h3 {

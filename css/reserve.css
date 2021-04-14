@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* 基本設定
 =============================================== */
 * {
@@ -9,17 +8,14 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 html, body {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
   line-height: 2.4;
@@ -32,46 +28,36 @@ body {
   padding: 0px;
   min-width: 1280px;
 }
-
 img {
   vertical-align: bottom;
 }
-
 a {
   color: #333333;
   text-decoration: none;
 }
-
-a:hover,
-a:active {
+a:hover, a:active {
   text-decoration: underline;
 }
-
 a:hover img {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
 nav li {
   margin: 0;
   padding: 0;
 }
-
 ::selection {
   background: #a78f73;
   color: #fff;
 }
-
 main {
   width: 100%;
 }
-
 /* PC用共通ボタン
 =================================== */
 .btn {
@@ -88,24 +74,20 @@ main {
   outline: none;
   align-items: center;
 }
-
 .btn a {
   display: block;
   color: #524F4C;
   text-decoration: none;
 }
-
 .btn:hover {
   background-color: #FFF;
   color: #A78F73;
   border: 2px solid #A78F73;
 }
-
 .btn:hover a {
   color: #A78F73;
   margin: -2px;
 }
-
 /* PC用共通タイトル
 =================================== */
 h2 {
@@ -116,13 +98,11 @@ h2 {
   text-align: center;
   letter-spacing: 0.8px;
 }
-
 .ttl-wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 23.5px;
 }
-
 .ttl-wrapper p {
   width: 325px;
   display: flex;
@@ -135,7 +115,6 @@ h2 {
   font-weight: bold;
   font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
 }
-
 h2 span {
   display: block;
   margin: 0 auto;
@@ -144,10 +123,10 @@ h2 span {
   height: 2px;
   border-top: 2px dashed #524F4C;
 }
-
 /* グローバルナビ
 =============================================== */
 #g-nav {
+  display: flex;
   max-width: 1280px;
   height: 160px;
   font-size: 12px;
@@ -155,14 +134,12 @@ h2 span {
   padding: 26.5px 0;
   margin: 0 auto;
 }
-
 #g-nav p {
   font-family: "Open+Sans";
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 0.8px;
 }
-
 #g-nav span {
   display: block;
   margin: 0 auto;
@@ -172,74 +149,62 @@ h2 span {
   background-color: #a78f73;
   border-radius: 4px;
 }
-
 #g-nav-ul {
   width: 95%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 /* コンテンツ
 =============================================== */
-
 main {
   height: 1537px;
   background-color: #FDFBF3;
 }
-
 .reserve-box {
   width: 951px;
   height: 301px;
   background-color: #E2DFDA;
   margin: 60px auto 127px;
 }
-
 .reserve-box:nth-child(3) {
   margin-bottom: 66px;
 }
-
 .reserve-box h3 {
   font-size: 30px;
-	display: block;
-	padding-top: 40px;
+  display: block;
+  padding-top: 40px;
 }
-
 .reserve-btn {
   width: 753px;
   height: 68px;
   background-color: #A78F73;
   margin: 17px auto;
-	cursor: pointer;
-
+  cursor: pointer;
 }
 .reserve-btn a {
-		color:#F5F3F0;
-	font-size: 30px;
-	line-height: 2.27;
-	text-decoration: none;
-	cursor: pointer;
+  color: #F5F3F0;
+  font-size: 30px;
+  line-height: 2.27;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 .tel-icon:before {
-	font-family: "Font Awesome 5 Free";
-	content: '\f879';
-	font-weight: 900;
-	padding-right: 1rem;
-	color: #F5F3F0;
+  font-family: "Font Awesome 5 Free";
+  content: '\f879';
+  font-weight: 900;
+  padding-right: 1rem;
+  color: #F5F3F0;
 }
-
 .reserve-btn a:hover .tel-icon {
-	opacity: 1;
+  opacity: 1;
 }
-
 #location {
   background-color: #FFF;
   width: 100%;
   height: 725px;
   margin: 0 auto;
 }
-
 #location-wrapper {
   width: 1030px;
   margin: 0 auto;
@@ -250,14 +215,11 @@ main {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 #location-wrapper article {
   text-align: left;
 }
-
 /* フッター
 =============================================== */
-
 footer {
   position: relative;
   background-color: #524F4C;
@@ -267,14 +229,12 @@ footer {
   color: #F5F3F0;
   font-size: 12px;
 }
-
 footer ul {
   margin: 0 auto;
   padding: 24px 0 13.5px;
   display: flex;
   width: 971px;
 }
-
 footer ul li {
   height: 24px;
   display: block;
@@ -283,19 +243,15 @@ footer ul li {
   margin: -1px;
   line-height: 2;
 }
-
 footer ul li:last-child {
   border-right: 1px solid #F5F3F0;
 }
-
-footer ul li a{
-    color: #F5F3F0;
+footer ul li a {
+  color: #F5F3F0;
 }
-
 footer img {
   margin-bottom: 11.6px;
 }
-
 footer .go-top {
   position: absolute;
   display: block;
@@ -306,16 +262,257 @@ footer .go-top {
   background-color: #E2DFDA;
   border-radius: 50%;
 }
-
 footer .go-top img {
   width: 46px;
   height: 46px;
   margin-top: 10px;
 }
-
 /* レスポンシブ用ナビ
 =============================================== */
-
 #phone-nav {
   display: none;
 }
+/* レスポンシブ設定
+=============================================== */
+@media screen and (max-width: 400px) {
+  /* 基本設定
+=============================================== */
+  body {
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 375px;
+    letter-spacing: 0em;
+  }
+  .content-about {
+    width: 328px;
+    margin: 0 auto;
+  }
+  .br-pc {
+    display: none;
+  }
+  /* スマホ用共通ボタン
+=================================== */
+  .btn {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    display: block;
+    background-color: #E2DFDA;
+    font-family: "Open+Sans";
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .btn a {
+    line-height: 3;
+  }
+  .btn:hover {
+    background-color: #FFF;
+    color: #A78F73;
+    border: 2px solid #A78F73;
+  }
+  .btn:hover a {
+    color: #A78F73;
+    margin: -2px;
+  }
+  .btn {
+    display: block;
+    width: 152px;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+  }
+  /* スマホ用共通タイトル
+=================================== */
+  h2 {
+    color: #A78F73;
+    font-family: "Open+Sans";
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.8px;
+  }
+  .ttl-wrapper {
+    padding-top: 15px;
+  }
+  .ttl-wrapper p {
+    width: 271px;
+    margin: -10px auto 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h2 span {
+    left: 0;
+    width: 76.5px;
+    height: 2px;
+    border-top: 2px dashed #524F4C;
+  }
+  /* グローバルナビ
+=============================================== */
+  #g-nav {
+    max-width: 375px;
+    height: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #g-nav ul {
+    display: none;
+  }
+  #g-nav img {
+    width: 108px;
+    height: auto;
+    margin-top: 4px;
+    margin-left: 14px;
+  }
+  /* コンテンツ
+=============================================== */
+  .bigbg {
+    width: 375px;
+  }
+  /* フッター
+=============================================== */
+  footer {
+    position: relative;
+    background-color: #524F4C;
+    width: 100%;
+    height: 258px;
+    margin: 0 auto;
+    color: #F5F3F0;
+    font-size: 12px;
+  }
+  footer ul {
+    padding: 24px 0 13.5px;
+    display: none;
+  }
+  footer img {
+    padding: 24px 0 13.5px;
+    margin-bottom: 11.6px;
+  }
+  footer .go-top {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 24px;
+    bottom: 230px;
+    background-color: #E2DFDA;
+    border-radius: 50%;
+  }
+  footer .go-top img {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  /* スマホ用ナビ
+=============================================== */
+  #phone-nav {
+    display: block;
+    padding-top: 31px;
+    background: rgba(167, 143, 115, .8);
+    color: #F5F3F0;
+    position: fixed;
+    right: -288px;
+    top: 0;
+    width: 288px;
+    height: 100%;
+    transition: transform 0.3s;
+    z-index: 10;
+  }
+  #phone-nav img {
+    width: 191px;
+    margin-bottom: 10px;
+  }
+  #phone-nav ul {
+    width: 288px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #phone-nav li {
+    border-top: .5px solid #A78F73;
+  }
+  #phone-nav li:last-child {
+    border-bottom: .5px solid #A78F73;
+  }
+  #phone-nav li a {
+    height: 57px;
+    font-size: 18px;
+    font-family: "Open+Sans";
+    font-weight: 400;
+    line-height: 1.16;
+    display: block;
+    padding: 6.5px;
+    text-decoration: none;
+    color: #F5F3F0;
+    transition: transform 0.2s;
+  }
+  #phone-nav li a p {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  #phone-nav ul li a span {
+    color: #ff2600;
+  }
+  #phone-nav .btn {
+    margin: 21px auto 0;
+  }
+  #trigger {
+    position: relative;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 23px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+    z-index: 100;
+  }
+  #trigger span {
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 2px;
+    background-color: #A78F73;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0;
+  }
+  #trigger, #trigger span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: content-box;
+  }
+  #trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  #trigger span:nth-of-type(2) {
+    top: 8.5px;
+  }
+  #trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  #trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(19px) rotate(-45deg);
+    transform: translateY(8.8px) rotate(-45deg);
+    background-color: #F5F3F0;
+  }
+  #trigger.active span:nth-of-type(2) {
+    opacity: 0;
+    background-color: #F5F3F0;
+  }
+  #trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-19px) rotate(45deg);
+    transform: translateY(-8.8px) rotate(45deg);
+    background-color: #F5F3F0;
+  }
+  .show {
+    transform: translate3d(-288px, 0, 0);
+  }

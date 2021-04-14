@@ -49,3 +49,34 @@ for(let i = 0; i < grandmenu.length; i++){
 	document.getElementById('menu'+(i+1)).insertAdjacentHTML('beforeend', tr);
 };
 
+/*ナビゲーションドロワー動作*/
+
+let nav = document.getElementById('phone-nav');
+
+let icon = document.getElementById('trigger');
+
+let main = document.querySelector('main');
+
+let header = document.querySelector('header');
+
+icon.onclick = function () {
+    nav.classList.toggle('show');
+//    icon.classList.toggle('show');
+    this.classList.toggle('active');
+};
+
+main.onclick = function () {
+    if (nav.className.length === 4) {
+        nav.classList.remove('show');
+//        icon.classList.remove('show');
+        icon.classList.remove('active');
+    }
+};
+
+header.onclick = function () {
+    if (nav.className.length === 4) {
+        nav.classList.remove('show');
+//        icon.classList.remove('show');
+        icon.classList.remove('active');
+    }
+};

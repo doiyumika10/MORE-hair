@@ -1,5 +1,5 @@
 'use strict';
-if (window.matchMedia('(min-width: 400px)').matches) {
+if (window.matchMedia('(max-width: 400px)').matches) {
    var mySwiper1 = new Swiper('.swiper1', {
   effect: 'fade',
   autoplay: {
@@ -51,7 +51,7 @@ var mySwiper2 = new Swiper('.swiper2', {
 		prevEl: '.swiper-button-prev'
 	}
 });
-} else if (window.matchMedia('(max-width: 400px)').matches) {
+} else if (window.matchMedia('(min-width: 400px)').matches) {
     var mySwiper1 = new Swiper('.swiper1', {
   effect: 'fade',
   autoplay: {
@@ -77,7 +77,7 @@ var mySwiper2 = new Swiper('.swiper2', {
 
 var mySwiper2 = new Swiper('.swiper2', {
   spaceBetween: 10,
-  slidesPerView: 4,
+		  slidesPerView: 4,
   loopedSlides: 6,
   direction: 'horizontal',
 	mousewheel: {

@@ -153,6 +153,7 @@ h2 span {
 =============================================== */
 #bigbg {
   height: 730px;
+	width: auto;
 }
 .swiper-container {
   height: 730px;
@@ -300,7 +301,7 @@ h2 span {
   position: relative;
   background-color: #FFF;
   width: 100%;
-  height: 800px;
+  height: 824px;
 }
 #staff img {
   width: 258px;
@@ -485,7 +486,7 @@ footer .go-top img {
 }
 /* レスポンシブ設定
 =============================================== */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   /* 基本設定
 =============================================== */
   body {
@@ -587,6 +588,7 @@ footer .go-top img {
 =============================================== */
 #bigbg {
   height: 213px;
+	width: auto;
 }
 .swiper-container {
   height: 213px;
@@ -608,9 +610,9 @@ footer .go-top img {
 	}
 .swiper-pagination-bullet {
   border-radius: inherit;
-  margin: 0 5px !important;
-  width: 54px;
-  height: 5px;
+  margin: 0 3px !important;
+  width: 20px;
+  height: 3px;
   background: gray;
   opacity: 0.19;
 }

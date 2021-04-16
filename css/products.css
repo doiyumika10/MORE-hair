@@ -165,7 +165,6 @@ h3 {
   align-items: center;
 }
 .img {
-  /*	position: absolute;*/
   width: 255px;
   height: 255px;
   background-color: aliceblue;
@@ -348,12 +347,12 @@ footer .go-top img {
 }
 /* レスポンシブ設定
 =============================================== */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   /* 基本設定
 =============================================== */
   body {
     line-height: 2;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     min-width: 375px;
     letter-spacing: 0em;
@@ -428,7 +427,7 @@ footer .go-top img {
   /* グローバルナビ
 =============================================== */
   #g-nav {
-    max-width: 375px;
+    max-width: 100%;
     height: 70px;
     font-size: 12px;
     font-weight: bold;
@@ -447,7 +446,74 @@ footer .go-top img {
   /* コンテンツ
 =============================================== */
   .bigbg {
-    width: 375px;
+    width: 100%;
+  }
+  main {
+    height: 832px;
+  }
+  .contents-left, .contents-right {
+    width: 328px;
+    margin: 40px auto 20px;
+  }
+  .contents-right {
+    flex-direction: row;
+  }
+  .contents-left img, .contents-right img {
+    width: 152px;
+    height: 157px;
+    object-fit: cover;
+  }
+  .contents-left:first-child {
+    margin-top: 40px;
+  }
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .contents-left .bg {
+    margin-left: 0px;
+  }
+  .line {
+    width: 128px;
+    height: 1px;
+    margin: 0 auto 13px;
+  }
+  .contents-wrapper {
+    width: 176px;
+    margin: 0 auto;
+  }
+  .bg {
+    position: relative;
+    width: 176px;
+    height: 157px;
+    margin: 0;
+    background-color: rgba(245, 243, 240, 0.7);
+    zindex: 100;
+  }
+  #online {
+    background-image: url("../images/damageless.jpg");
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+    height: 165px;
+  }
+  #online .ttl-wrapper p {
+    width: 327px;
+    margin-bottom: 13px;
+  }
+  .online-wrapper {
+    min-width: 375px;
+  }
+  .online-contents {
+    margin-top: 0px;
+    height: 116px;
+    justify-content: space-around
+  }
+  .img {
+    display: none;
   }
   /* フッター
 =============================================== */

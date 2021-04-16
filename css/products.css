@@ -425,6 +425,9 @@ footer .go-top img {
   main {
     height: 832px;
   }
+  .products-desc {
+    width: 328px;
+  }
   .contents-left, .contents-right {
     width: 328px;
     margin: 40px auto 20px;

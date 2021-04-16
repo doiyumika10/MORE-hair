@@ -366,30 +366,8 @@ footer .go-top img {
   }
   /* スマホ用共通ボタン
 =================================== */
-  .btn {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-    display: block;
-    background-color: #E2DFDA;
-    font-family: "Open+Sans";
-    text-align: center;
-    border-radius: 5px;
-    outline: none;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
   .btn a {
-    line-height: 3;
-  }
-  .btn:hover {
-    background-color: #FFF;
-    color: #A78F73;
-    border: 2px solid #A78F73;
-  }
-  .btn:hover a {
-    color: #A78F73;
-    margin: -2px;
+    line-height: 2.68;
   }
   .btn {
     display: block;
@@ -402,11 +380,7 @@ footer .go-top img {
   /* スマホ用共通タイトル
 =================================== */
   h2 {
-    color: #A78F73;
-    font-family: "Open+Sans";
     font-size: 22px;
-    font-weight: normal;
-    text-align: center;
     letter-spacing: 0.8px;
   }
   .ttl-wrapper {

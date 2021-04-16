@@ -410,6 +410,7 @@ footer .go-top img {
 	
   #location-wrapper {
     width: 328px;
+	  margin-top: 25px;
     flex-direction: column-reverse;
     justify-content: space-around;
   }

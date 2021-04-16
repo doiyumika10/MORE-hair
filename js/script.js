@@ -1,5 +1,5 @@
 'use strict';
-if (window.matchMedia('(max-width: 400px)').matches) {
+if (window.matchMedia('(max-width: 480px)').matches) {
    var mySwiper1 = new Swiper('.swiper1', {
   effect: 'fade',
   autoplay: {

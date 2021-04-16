@@ -151,7 +151,7 @@ h2 span {
 /* グローバルナビ
 =============================================== */
 #g-nav {
-	display: flex;
+  display: flex;
   max-width: 1280px;
   height: 160px;
   font-size: 12px;
@@ -185,17 +185,14 @@ h2 span {
   -ms-flex-align: center;
   align-items: center;
 }
-
 headder {
-	height: 560px;
+  height: 560px;
 }
-
 #trigger {
   display: none;
 }
 /* コンテンツ
 =============================================== */
-
 main {
   height: 1000px;
   background-color: #FDFBF3;
@@ -336,7 +333,6 @@ footer .go-top img {
 #phone-nav {
   display: none;
 }
-
 /* レスポンシブ設定
 =============================================== */
 @media screen and (max-width: 480px) {
@@ -353,7 +349,7 @@ footer .go-top img {
     width: 328px;
     margin: 0 auto;
   }
-  .br-pc {
+  .concept-desc .br-pc {
     display: none;
   }
   /* スマホ用共通ボタン
@@ -411,76 +407,75 @@ footer .go-top img {
     margin-top: 4px;
     margin-left: 14px;
   }
-	
   /* コンテンツ
 =============================================== */
-	
-.bigbg {
-	width: 100%;
-}
-	main {
-  height: 755px;
-  background-color: #FDFBF3;
-}
-.content-btn {
-  width: 83px;
-  height: 26px;
-  font-size: 10px;
-  border: 1px solid #A78F73;
-}
-.content-btn a {
-  line-height: 2.6;
-  margin: -1px;
-}
-.content-btn:hover {
-  border: 1px solid #A78F73;
-}
-.content-btn:hover a {
-  margin: -1px;
-}
-.active {
-  border: 1px solid #A78F73;
-}
-.active a {
-  margin: -1px;
-}
-
-	.concept-desc {
-		display: none;
-	}
-	
-#concept-ul {
-  width: 328px;
-  margin: 25px auto 25px;
-}
-#concept-ul li {
-  margin: -1px;
-}
-article {
-	display: flex;
-  width: 328px;
-  height: 516px;
-}
-.article-wrapper {
-	flex-direction: column;
-  justify-content: space-around;
-}
-article img {
-  width: 328px;
-  height: auto;
-}
-article h3 {
-  font-size: 15px;
-  font-weight: bold;
-  margin-left: 0px;
-}
-article p {
-  margin-left: 0px;
-}
-.hidden {
-  display: none;
-}
-	
+  .bigbg {
+    width: 100%;
+  }
+  main {
+    height: 800px;
+    background-color: #FDFBF3;
+  }
+  .content-btn {
+    width: 83px;
+    height: 26px;
+    font-size: 10px;
+    border: 1px solid #A78F73;
+  }
+  .content-btn a {
+    line-height: 2.6;
+    margin: -1px;
+  }
+  .content-btn:hover {
+    border: 1px solid #A78F73;
+  }
+  .content-btn:hover a {
+    margin: -1px;
+  }
+  .active {
+    border: 1px solid #A78F73;
+  }
+  .active a {
+    margin: -1px;
+  }
+  .concept-desc {
+    width: 328px;
+    margin: 0 auto;
+  }
+  br {
+    display: none;
+  }
+  #concept-ul {
+    width: 328px;
+    margin: 25px auto 25px;
+  }
+  #concept-ul li {
+    margin: -1px;
+  }
+  article {
+    display: flex;
+    width: 328px;
+    height: 516px;
+  }
+  .article-wrapper {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  article img {
+    width: 328px;
+    height: auto;
+  }
+  article h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  article p {
+    margin-left: 0px;
+  }
+  .hidden {
+    display: none;
+  }
   /* フッター
 =============================================== */
   footer {

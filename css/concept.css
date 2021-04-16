@@ -339,12 +339,12 @@ footer .go-top img {
 
 /* レスポンシブ設定
 =============================================== */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   /* 基本設定
 =============================================== */
   body {
     line-height: 2;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     min-width: 375px;
     letter-spacing: 0em;
@@ -419,7 +419,7 @@ footer .go-top img {
   /* グローバルナビ
 =============================================== */
   #g-nav {
-    max-width: 375px;
+    max-width: 100%;
     height: 70px;
     font-size: 12px;
     font-weight: bold;
@@ -440,7 +440,69 @@ footer .go-top img {
 =============================================== */
 	
 .bigbg {
-	width: 375px;
+	width: 100%;
+}
+	main {
+  height: 755px;
+  background-color: #FDFBF3;
+}
+.content-btn {
+  width: 83px;
+  height: 26px;
+  font-size: 10px;
+  border: 1px solid #A78F73;
+}
+.content-btn a {
+  line-height: 2.6;
+  margin: -1px;
+}
+.content-btn:hover {
+  border: 1px solid #A78F73;
+}
+.content-btn:hover a {
+  margin: -1px;
+}
+.active {
+  border: 1px solid #A78F73;
+}
+.active a {
+  margin: -1px;
+}
+
+	.concept-desc {
+		display: none;
+	}
+	
+#concept-ul {
+  width: 328px;
+  margin: 25px auto 25px;
+}
+#concept-ul li {
+  margin: -1px;
+}
+article {
+	display: flex;
+  width: 328px;
+  height: 516px;
+}
+.article-wrapper {
+	flex-direction: column;
+  justify-content: space-around;
+}
+article img {
+  width: 328px;
+  height: auto;
+}
+article h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 0px;
+}
+article p {
+  margin-left: 0px;
+}
+.hidden {
+  display: none;
 }
 	
   /* フッター

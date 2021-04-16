@@ -51,7 +51,7 @@ var mySwiper2 = new Swiper('.swiper2', {
 		prevEl: '.swiper-button-prev'
 	}
 });
-} else if (window.matchMedia('(min-width: 400px)').matches) {
+} else if (window.matchMedia('(min-width: 480px)').matches) {
     var mySwiper1 = new Swiper('.swiper1', {
   effect: 'fade',
   autoplay: {

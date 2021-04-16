@@ -61,9 +61,8 @@ nav li {
 main {
   width: 100%;
 }
-
-.p-ph{
-	display: none;
+.p-ph {
+  display: none;
 }
 /* コンテンツ
 =============================================== */
@@ -153,7 +152,7 @@ h2 span {
 =============================================== */
 #bigbg {
   height: 730px;
-	width: auto;
+  width: auto;
 }
 .swiper-container {
   height: 730px;
@@ -185,7 +184,7 @@ h2 span {
 /* グローバルナビ
 =============================================== */
 #g-nav {
-	display: flex;
+  display: flex;
   max-width: 1280px;
   height: 160px;
   font-size: 12px;
@@ -219,11 +218,9 @@ h2 span {
   -ms-flex-align: center;
   align-items: center;
 }
-
 #trigger {
-	display: none;
+  display: none;
 }
-
 /* 予約バナー
 =============================================== */
 #reserve-banner {
@@ -238,7 +235,6 @@ h2 span {
   align-items: center;
   margin: 0 auto;
 }
-
 /* インフォメーション
 =============================================== */
 #information {
@@ -281,9 +277,9 @@ h2 span {
   align-items: center;
 }
 #concept img {
-	width: 258px;
-	height: 258px;
-	object-fit: cover;
+  width: 258px;
+  height: 258px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16.5px;
 }
@@ -311,7 +307,7 @@ h2 span {
   height: 258px;
 }
 #staff .name-en {
-	margin-top: 7px;
+  margin-top: 7px;
   font-family: "Open+Sans";
   font-size: 22px;
   line-height: 1.1;
@@ -422,11 +418,11 @@ h2 span {
 #location article {
   text-align: left;
 }
-.map-pc{
-	display: block;
+.map-pc {
+  display: block;
 }
 .map-ph {
-	display: none;
+  display: none;
 }
 #recruit-banner {
   margin-top: 43px;
@@ -495,17 +491,17 @@ footer .go-top img {
   body {
     line-height: 2;
     font-size: 14px;
-	  font-weight: 400;
+    font-weight: 400;
     min-width: 375px;
-	letter-spacing: 0em;
+    letter-spacing: 0em;
   }
-	.content-about {
-		width: 328px;
-		margin: 0 auto;
-	}
-	.br-pc {
-		display: none;
-	}
+  .content-about {
+    width: 328px;
+    margin: 0 auto;
+  }
+  .br-pc {
+    display: none;
+  }
   /* スマホ用共通ボタン
 =================================== */
   .btn {
@@ -569,87 +565,84 @@ footer .go-top img {
   /* グローバルナビ
 =============================================== */
   #g-nav {
-    max-width: 375px;
+    max-width: 100%;
     height: 70px;
     font-size: 12px;
     font-weight: bold;
-	padding: 0;
+    padding: 0;
     margin: 0 auto;
   }
-	#g-nav ul {
-		display: none;
-	}
-	
-	#g-nav img {
-		width: 108px;
-		height: auto;
-		margin-top: 4px;
-		margin-left: 14px;
-	}
-
-	/* スライダー
+  #g-nav ul {
+    display: none;
+  }
+  #g-nav img {
+    width: 108px;
+    height: auto;
+    margin-top: 4px;
+    margin-left: 14px;
+  }
+  /* スライダー
 =============================================== */
-#bigbg {
-  height: 213px;
-	width: 100%;
-}
-.swiper-container {
-  height: 213px;
-}
-/* 全体のスタイル */
-.swiper-wrapper {
-  width: 100%;
-  height: 213px;
-}
-/* 全スライド共通スタイル */
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-	.swiper-slide img {
-		width: 100%;
-		height: 213px;
-		object-fit: cover;
-	}
-.swiper-pagination-bullet {
-  border-radius: inherit;
-  margin: 0 3px !important;
-  width: 20px;
-  height: 3px;
-  background: gray;
-  opacity: 0.19;
-}
-.swiper-pagination-bullet-active {
-  background: gray;
-  opacity: 1;
-}
+  #bigbg {
+    height: 213px;
+    width: 100%;
+  }
+  .swiper-container {
+    height: 213px;
+  }
+  /* 全体のスタイル */
+  .swiper-wrapper {
+    width: 100%;
+    height: 213px;
+  }
+  /* 全スライド共通スタイル */
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: 213px;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+    border-radius: inherit;
+    margin: 0 3px !important;
+    width: 20px;
+    height: 3px;
+    background: gray;
+    opacity: 0.19;
+  }
+  .swiper-pagination-bullet-active {
+    background: gray;
+    opacity: 1;
+  }
   /* 予約バナー
 =============================================== */
   #reserve-banner {
-	  width: inherit;
+    width: inherit;
     height: 104px;
   }
   #reserve-banner-wrapper {
     width: 328px;
     justify-content: space-between;
-	margin: 0 auto;
+    margin: 0 auto;
   }
   #reserve-banner img {
     width: 152px;
     height: 104px;
-	object-fit: cover;
+    object-fit: cover;
   }
-
   #reserve-banner h2 {
     display: none;
   }
   #reserve-banner .btn {
-	  font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
-	}
+    font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
+  }
   /* インフォメーション
 =============================================== */
   #information {
-    height: 244px;
+    height: 260px;
   }
   #information-box {
     width: 328px;
@@ -659,10 +652,10 @@ footer .go-top img {
     border-radius: 5px;
   }
   #information-box p {
-	  width: 273px;
+    width: 273px;
     text-align: left;
-	font-size: 9px;
-	line-height: 2.9;
+    font-size: 9px;
+    line-height: 2.9;
   }
   /* コンセプト
 =============================================== */
@@ -672,25 +665,23 @@ footer .go-top img {
     height: 672px;
     margin: 0 auto;
   }
-	
   #concept ul {
     max-width: 328px;
     margin: 8px auto 18px;
     display: grid;
-	  column-gap: 24px;
-		  row-gap: 13px;
-	  grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 13px;
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-	#concept li {
-		width: 152px;
-	}
-
+  #concept li {
+    width: 152px;
+  }
   #concept img {
-	  width: 152px;
-	  height: 152px;
+    width: 152px;
+    height: 152px;
     border-radius: 50%;
     margin-bottom: 3px;
   }
@@ -702,7 +693,6 @@ footer .go-top img {
   #concept a {
     text-decoration: none;
   }
-
   #concept .btn {
     margin: 0 auto;
   }
@@ -718,7 +708,7 @@ footer .go-top img {
     width: 200px;
     height: auto;
   }
-	#staff .name-en {
+  #staff .name-en {
     font-family: "Open+Sans";
     font-size: 22px;
     line-height: 1.1;
@@ -746,17 +736,17 @@ footer .go-top img {
   }
   #staff .textcontent {
     font-size: 15px;
-	  line-height: 1.4;
+    line-height: 1.4;
     width: 241px;
     margin: 0 auto;
   }
   .fab {
     color: #A78F73;
-	  margin-top: 16px;
+    margin-top: 16px;
   }
   .swiper2 {
     width: 241px;
-	  height: 400px;
+    height: 400px;
     box-sizing: content-box;
     margin-top: 24px;
   }
@@ -793,29 +783,28 @@ footer .go-top img {
     width: 328px;
     margin: 24px auto 0px;
     display: flex;
-	  flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
   }
-	#products li a{
-		display: flex;
-		background-color: #F5F3F0;
-		text-align: left;
-		margin-bottom: 30px;
-	}
+  #products li a {
+    display: flex;
+    background-color: #F5F3F0;
+    text-align: left;
+    margin-bottom: 30px;
+  }
   #products h3 {
     font-family: "Open+Sans";
     font-size: 18px;
     font-weight: 400;
-	  margin-left: 6.5px;
+    margin-left: 6.5px;
   }
-	
   #products a {
     text-decoration: none;
   }
-	.p-ph {
-		display: block;
-		margin-left: 6.5px;
-	}
+  .p-ph {
+    display: block;
+    margin-left: 6.5px;
+  }
   #products .btn {
     margin: 0 auto;
   }
@@ -840,173 +829,157 @@ footer .go-top img {
   #location article {
     display: none;
   }
-	.map-pc {
-		display: none;
-	}
-	.map-ph {
-		display: block;
-		margin-top: 24px;
-	}
+  .map-pc {
+    display: none;
+  }
+  .map-ph {
+    display: block;
+    margin-top: 24px;
+  }
   #recruit-banner {
-	width: 328px;
+    width: 328px;
     margin-top: 43px;
   }
-
-/* フッター
+  /* フッター
 =============================================== */
-footer {
-  position: relative;
-  background-color: #524F4C;
-  width: 100%;
-  height: 258px;
-  margin: 0 auto;
-  color: #F5F3F0;
-  font-size: 12px;
-}
-footer ul {
-  padding: 24px 0 13.5px;
-  display: none;
-}
-
-footer img {
-	padding: 24px 0 13.5px;
-  margin-bottom: 11.6px;
-}
-
-footer .go-top {
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 60px;
-  right: 24px;
-  bottom: 230px;
-  background-color: #E2DFDA;
-  border-radius: 50%;
-}
-footer .go-top img {
-	padding: 0;
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
-}
-
-/* スマホ用ナビ
+  footer {
+    position: relative;
+    background-color: #524F4C;
+    width: 100%;
+    height: 258px;
+    margin: 0 auto;
+    color: #F5F3F0;
+    font-size: 12px;
+  }
+  footer ul {
+    padding: 24px 0 13.5px;
+    display: none;
+  }
+  footer img {
+    padding: 24px 0 13.5px;
+    margin-bottom: 11.6px;
+  }
+  footer .go-top {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    right: 24px;
+    bottom: 230px;
+    background-color: #E2DFDA;
+    border-radius: 50%;
+  }
+  footer .go-top img {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  /* スマホ用ナビ
 =============================================== */
-
-
-#phone-nav {
-	display: block;
+  #phone-nav {
+    display: block;
     padding-top: 31px;
     background: rgba(167, 143, 115, .8);
     color: #F5F3F0;
-	position: fixed;
+    position: fixed;
     right: -288px;
     top: 0;
     width: 288px;
     height: 100%;
     transition: transform 0.3s;
     z-index: 10;
-}
-
-#phone-nav img {
-	width: 191px;
-	margin-bottom: 10px;
-}
-
-#phone-nav ul {
-	width: 288px;
+  }
+  #phone-nav img {
+    width: 191px;
+    margin-bottom: 10px;
+  }
+  #phone-nav ul {
+    width: 288px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-#phone-nav li {
-	border-top: .5px solid #A78F73;
-}
-#phone-nav li:last-child {
-	border-bottom: .5px solid #A78F73;
-}
-
-#phone-nav li a{
-	height: 57px;
-	font-size: 18px;
-	font-family: "Open+Sans";
+  }
+  #phone-nav li {
+    border-top: .5px solid #A78F73;
+  }
+  #phone-nav li:last-child {
+    border-bottom: .5px solid #A78F73;
+  }
+  #phone-nav li a {
+    height: 57px;
+    font-size: 18px;
+    font-family: "Open+Sans";
     font-weight: 400;
-	line-height: 1.16;
+    line-height: 1.16;
     display: block;
     padding: 6.5px;
     text-decoration: none;
     color: #F5F3F0;
     transition: transform 0.2s;
-}
-
-#phone-nav li a p {
-	margin-top: 4px;
-	font-size: 12px;
-	line-height: 1.6;
-}
-
-#phone-nav ul li a span {
+  }
+  #phone-nav li a p {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  #phone-nav ul li a span {
     color: #ff2600;
-}
-
-#phone-nav .btn {
-	margin: 21px auto 0;
-}
-
-#trigger {
-  position: relative;
-		position: fixed;
-		top:24px;
-		right: 24px;
-  width: 23px;
-  height: 20px;
-  cursor: pointer;
-		margin: auto; 
-		z-index: 100;
-	outline: none;
-}
-#trigger span {
-  position: absolute;
-  left: 0;
-  width: 23px;
-  height: 2px;
-  background-color: #A78F73;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0;
-}
-#trigger, #trigger span {
-  display: inline-block;
-  transition: all .5s;
-  box-sizing: content-box;
-}
-#trigger span:nth-of-type(1) {
-  top: 0;
-}
-#trigger span:nth-of-type(2) {
-  top: 8.5px;
-}
-#trigger span:nth-of-type(3) {
-  bottom: 0;
-}
-	
-	#trigger.active span:nth-of-type(1) {
-  -webkit-transform: translateY(19px) rotate(-45deg);
-  transform: translateY(8.8px) rotate(-45deg);
-		background-color: #F5F3F0;
-}
-#trigger.active span:nth-of-type(2) {
-  opacity: 0;
-	background-color: #F5F3F0;
-}
-#trigger.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-19px) rotate(45deg);
-  transform: translateY(-8.8px) rotate(45deg);
-	background-color: #F5F3F0;
-}
-.show {
+  }
+  #phone-nav .btn {
+    margin: 21px auto 0;
+  }
+  #trigger {
+    position: relative;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 23px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+    z-index: 100;
+    outline: none;
+  }
+  #trigger span {
+    position: absolute;
+    left: 0;
+    width: 23px;
+    height: 2px;
+    background-color: #A78F73;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0;
+  }
+  #trigger, #trigger span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: content-box;
+  }
+  #trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  #trigger span:nth-of-type(2) {
+    top: 8.5px;
+  }
+  #trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  #trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(19px) rotate(-45deg);
+    transform: translateY(8.8px) rotate(-45deg);
+    background-color: #F5F3F0;
+  }
+  #trigger.active span:nth-of-type(2) {
+    opacity: 0;
+    background-color: #F5F3F0;
+  }
+  #trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-19px) rotate(45deg);
+    transform: translateY(-8.8px) rotate(45deg);
+    background-color: #F5F3F0;
+  }
+  .show {
     transform: translate3d(-288px, 0, 0);
-}
-	
+  }
 }

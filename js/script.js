@@ -24,7 +24,7 @@ if (window.matchMedia('(max-width: 480px)').matches) {
 });
 
 var mySwiper2 = new Swiper('.swiper2', {
-  spaceBetween: 50,
+  spaceBetween: 10,
   direction: 'horizontal',
 	mousewheel: {
 		forceToAxis: true,
@@ -35,15 +35,10 @@ var mySwiper2 = new Swiper('.swiper2', {
   autoHeght: true,
   loop: true,
   breakpoints: {
-		600: {
-			slidesPerView: 3,
-			slidesPerGroup: 1,
-			spaceBetween: 0
-		},
-		375: {
+		480: {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
-			spaceBetween: 0
+			spaceBetween: 50
 		}
 	},
   navigation: {
@@ -77,7 +72,7 @@ var mySwiper2 = new Swiper('.swiper2', {
 
 var mySwiper2 = new Swiper('.swiper2', {
   spaceBetween: 10,
-		  slidesPerView: 4,
+	slidesPerView: 4,
   loopedSlides: 6,
   direction: 'horizontal',
 	mousewheel: {
@@ -89,12 +84,7 @@ var mySwiper2 = new Swiper('.swiper2', {
   autoHeght: true,
   loop: true,
   breakpoints: {
-		600: {
-			slidesPerView: 3,
-			slidesPerGroup: 1,
-			spaceBetween: 0
-		},
-		375: {
+		480: {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
 			spaceBetween: 0
@@ -127,14 +117,12 @@ let header = document.querySelector('header');
 
 icon.onclick = function () {
     nav.classList.toggle('show');
-//    icon.classList.toggle('show');
     this.classList.toggle('active');
 };
 
 main.onclick = function () {
     if (nav.className.length === 4) {
         nav.classList.remove('show');
-//        icon.classList.remove('show');
         icon.classList.remove('active');
     }
 };
@@ -142,7 +130,6 @@ main.onclick = function () {
 header.onclick = function () {
     if (nav.className.length === 4) {
         nav.classList.remove('show');
-//        icon.classList.remove('show');
         icon.classList.remove('active');
     }
 };

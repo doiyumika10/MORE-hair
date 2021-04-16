@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 html, body {
-  font-size: 16px;
+  font-size: 62.5%;
 }
 body {
   font-family: "Yu Gothic Medium", YuGothic, "游ゴシック Medium", "Yu Gothic", "メイリオ", "Meiryo", "MS PGothic", sans-serif;
@@ -281,6 +281,9 @@ h2 span {
   align-items: center;
 }
 #concept img {
+	width: 258px;
+	height: 258px;
+	object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16.5px;
 }
@@ -588,7 +591,7 @@ footer .go-top img {
 =============================================== */
 #bigbg {
   height: 213px;
-	width: auto;
+	width: 100%;
 }
 .swiper-container {
   height: 213px;
@@ -604,9 +607,9 @@ footer .go-top img {
   height: 100%;
 }
 	.swiper-slide img {
-		width: 375px;
+		width: 100%;
 		height: 213px;
-		object-fit: contain;
+		object-fit: cover;
 	}
 .swiper-pagination-bullet {
   border-radius: inherit;
@@ -687,7 +690,7 @@ footer .go-top img {
 
   #concept img {
 	  width: 152px;
-	  height: auto;
+	  height: 152px;
     border-radius: 50%;
     margin-bottom: 3px;
   }

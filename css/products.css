@@ -427,6 +427,7 @@ footer .go-top img {
   }
   .products-desc {
     width: 328px;
+    margin: 0 auto;
   }
   .contents-left, .contents-right {
     width: 328px;

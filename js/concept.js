@@ -1,9 +1,20 @@
 'use strict';
 
-let btn1 = document.getElementById('btn1');
+let btn = [];
+
+for(let h = 1, h < 4, h++){
+//	let 'btn' + h = document.getElementById('btn' + h );
+//	 let btn = [];
+//	btn.push('btn' + h);
+//	console.log(btn[0]);
+	eval("var btn" + h + " = "　+ document.getElementById(btn[h+1]));
+}
+
+/*let btn1 = document.getElementById('btn1');
 let btn2 = document.getElementById('btn2');
 let btn3 = document.getElementById('btn3');
 let btn4 = document.getElementById('btn4');
+*/
 
 let content1 = document.getElementById('damageless-article');
 let content2 = document.getElementById('treatment-article');
@@ -117,14 +128,12 @@ let header = document.querySelector('header');
 
 icon.onclick = function () {
     nav.classList.toggle('show');
-//    icon.classList.toggle('show');
     this.classList.toggle('active');
 };
 
 main.onclick = function () {
     if (nav.className.length === 4) {
         nav.classList.remove('show');
-//        icon.classList.remove('show');
         icon.classList.remove('active');
     }
 };
@@ -132,7 +141,6 @@ main.onclick = function () {
 header.onclick = function () {
     if (nav.className.length === 4) {
         nav.classList.remove('show');
-//        icon.classList.remove('show');
         icon.classList.remove('active');
     }
 };

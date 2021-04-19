@@ -1,119 +1,49 @@
 'use strict';
 
 let btn = [];
+let content = [];
 
-for(let h = 1, h < 4, h++){
-//	let 'btn' + h = document.getElementById('btn' + h );
-//	 let btn = [];
-//	btn.push('btn' + h);
-//	console.log(btn[0]);
-	eval("var btn" + h + " = "　+ document.getElementById(btn[h+1]));
+for (let h = 1; h < 5; h++) {
+  btn.push(document.getElementById(`btn${h}`));
+  content.push(document.getElementById(`content${h}`));
 }
-
-/*let btn1 = document.getElementById('btn1');
-let btn2 = document.getElementById('btn2');
-let btn3 = document.getElementById('btn3');
-let btn4 = document.getElementById('btn4');
-*/
-
-let content1 = document.getElementById('damageless-article');
-let content2 = document.getElementById('treatment-article');
-let content3 = document.getElementById('headspa-article');
-let content4 = document.getElementById('haircare-article');
 
 let curUrl = location.href;
-let lastUrl = curUrl.slice(-1);
+let lastUrl = parseInt(curUrl.slice(-1));
 
-if(lastUrl == 1){
-	btn1.classList.add('active');
-    btn2.classList.remove('active');
-    btn3.classList.remove('active');
-    btn4.classList.remove('active');
-    content1.classList.remove('hidden');
-    content2.classList.add('hidden');
-    content3.classList.add('hidden');
-    content4.classList.add('hidden');
-}else if(lastUrl == 2){
-	btn1.classList.remove('active');
-    btn2.classList.add('active');
-    btn3.classList.remove('active');
-    btn4.classList.remove('active');
-    content1.classList.add('hidden');
-    content2.classList.remove('hidden');
-    content3.classList.add('hidden');
-    content4.classList.add('hidden');
-}else if(lastUrl == 3){
-	btn1.classList.remove('active');
-    btn2.classList.remove('active');
-    btn3.classList.add('active');
-    btn4.classList.remove('active');
-    content1.classList.add('hidden');
-    content2.classList.add('hidden');
-    content3.classList.remove('hidden');
-    content4.classList.add('hidden');
-}else if(lastUrl == 4){
-	btn1.classList.remove('active');
-    btn2.classList.remove('active');
-    btn3.classList.remove('active');
-    btn4.classList.add('active');
-    content1.classList.add('hidden');
-    content2.classList.add('hidden');
-    content3.classList.add('hidden');
-    content4.classList.remove('hidden');
-}else{
-	btn1.classList.add('active');
-    btn2.classList.remove('active');
-    btn3.classList.remove('active');
-    btn4.classList.remove('active');
-    content1.classList.remove('hidden');
-    content2.classList.add('hidden');
-    content3.classList.add('hidden');
-    content4.classList.add('hidden');
+for (let i = 0; i < btn.length; i++) {
+  btn[i].classList.remove('active');
+  content[i].classList.add('hidden');
 }
 
-btn1.onclick = function(e){
-	e.preventDefault();
-    btn1.classList.add('active');
-    btn2.classList.remove('active');
-    btn3.classList.remove('active');
-    btn4.classList.remove('active');
-    content1.classList.remove('hidden');
-    content2.classList.add('hidden');
-    content3.classList.add('hidden');
-    content4.classList.add('hidden');
+
+if (lastUrl === 1) {
+  btn[0].classList.add('active');
+  content[0].classList.remove('hidden');
+} else if (lastUrl === 2) {
+  btn[1].classList.add('active');
+  content[1].classList.remove('hidden');
+} else if (lastUrl === 3) {
+  btn[2].classList.add('active');
+  content[2].classList.remove('hidden');
+} else if (lastUrl === 4) {
+  btn[3].classList.add('active');
+  content[3].classList.remove('hidden');
+} else {
+  btn[0].classList.add('active');
+  content[0].classList.remove('hidden');
 }
-btn2.onclick = function(e){
-	e.preventDefault();
-    btn1.classList.remove('active');
-    btn2.classList.add('active');
-    btn3.classList.remove('active');
-    btn4.classList.remove('active');
-    content1.classList.add('hidden');
-    content2.classList.remove('hidden');
-    content3.classList.add('hidden');
-    content4.classList.add('hidden');
+
+for(let h = 0; h < btn.length; h++){
+btn[h].onclick = function (e) {
+  e.preventDefault();
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].classList.remove('active');
+    content[i].classList.add('hidden');
+  }
+  btn[h].classList.add('active');
+  content[h].classList.remove('hidden');
 }
-btn3.onclick = function(e){
-	e.preventDefault();
-	btn1.classList.remove('active');
-    btn2.classList.remove('active');
-    btn3.classList.add('active');
-    btn4.classList.remove('active');
-    content1.classList.add('hidden');
-    content2.classList.add('hidden');
-    content3.classList.remove('hidden');
-    content4.classList.add('hidden');
-}
-btn4.onclick = function(e){
-	e.preventDefault();
-    btn1.classList.remove('active');
-    btn2.classList.remove('active');
-    btn3.classList.remove('active');
-    btn4.classList.add('active');
-    content1.classList.add('hidden');
-    content2.classList.add('hidden');
-    content3.classList.add('hidden');
-    content4.classList.remove('hidden');
 }
 
 /*ナビゲーションドロワー動作*/
@@ -127,20 +57,20 @@ let main = document.querySelector('main');
 let header = document.querySelector('header');
 
 icon.onclick = function () {
-    nav.classList.toggle('show');
-    this.classList.toggle('active');
+  nav.classList.toggle('show');
+  this.classList.toggle('active');
 };
 
 main.onclick = function () {
-    if (nav.className.length === 4) {
-        nav.classList.remove('show');
-        icon.classList.remove('active');
-    }
+  if (nav.className.length === 4) {
+    nav.classList.remove('show');
+    icon.classList.remove('active');
+  }
 };
 
 header.onclick = function () {
-    if (nav.className.length === 4) {
-        nav.classList.remove('show');
-        icon.classList.remove('active');
-    }
+  if (nav.className.length === 4) {
+    nav.classList.remove('show');
+    icon.classList.remove('active');
+  }
 };
